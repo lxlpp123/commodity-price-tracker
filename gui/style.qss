@@ -1,0 +1,114 @@
+QTabWidget {
+    background-color: #FFFFFF;
+}
+
+QTabWidget::tab-bar {
+    alignment: center;
+}
+
+QTabBar::tab {
+    width: 100px;
+    padding: 10px 0;
+    font: normal 13px;
+}
+
+QLineEdit {
+    background-color: #FFFFFF;
+    border: 2px solid rgb(183 , 183 , 183);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+QTextEdit {
+    background-color: #FFFFFF;
+    border: 2px solid rgb(183 , 183 , 183);
+    border-radius: 5px;
+    padding: 10px;
+    font: normal 20px;
+}
+
+QPushButton {
+    color: black;
+    background-color: rgb(238 , 238 , 238);
+    border: 1px solid rgb(183 , 183 , 183);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: simsun;
+}
+
+QPushButton:hover {
+    color: black;
+    background-color: rgb(228 , 240 , 250);
+    border: 1px solid rgb(15 , 150 , 255);
+}
+
+QPushButton:pressed {
+    color: black;
+    background-color: rgb(204 , 228 , 247);
+    border: 1px solid rgb(1 , 84 , 153);
+    padding-left: 3px;
+    padding-top: 3px;
+}
+
+QRadioButton {
+    margin-left: 5px;
+}
+
+QProgressBar {
+    background-color: #EEEEEE;
+    border:2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: #CD96CD;
+}
+
+QTableWidget {
+    background-color: #FFFFFF;
+    gridline-color: #000000;
+    border: 2px solid rgb(183 , 183 , 183);
+    border-radius: 5px;
+    font: normal 13px;
+}
+
+QHeaderView::section {
+    background-color: #A3A3A3;
+    color: #FFFFFF;
+}
+
+QScrollBar:vertical {
+    border:2px solid grey;
+    background-color: #32CC99;
+}
+
+QTreeWidget {
+    background-color: #FFFFFF;
+    border: 2px solid rgb(183 , 183 , 183);
+}
+
+QTreeView::branch:has-siblings:!adjoins-item {
+    border-image: url(./TBTracker_Ui/vline.png);
+}
+
+QTreeView::branch:has-siblings:adjoins-item {
+    border-image: url(./TBTracker_Ui/branch-more.png);
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+    border-image: url(./TBTracker_Ui/branch-end.png);
+}
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+    border-image: none;
+    image: url(./TBTracker_Ui/branch-closed.png);
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings {
+    border-image: none;
+    image: url(./TBTracker_Ui/branch-open.png);
+}
+
